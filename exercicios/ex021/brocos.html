@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caixas box-level</title>
+    <style>
+        h1 {
+            height: 50px;
+            width: 120px;
+            background-color: aquamarine;
+            text-align: center;
+            
+            padding: 0px 20px; /* "retângulo" -> top/bottom || right/left */
+            margin: -20px auto -10px auto;
+            /*shorthand -> sentido horário -> top, right, bottom, left*/
+
+            border: 5px solid #98e0e0;
+            outline: 7px dashed #63afaf;
+            /* shorthand -> width || style || color */
+        }
+
+        h2 {
+            margin-bottom: -5px
+        }
+
+        #parte {
+            border: 3px dotted red;
+            padding: 1px 15px 1px 2px;
+            text-decoration: none;
+            color: black;
+            /* */
+        }
+
+        span {
+            display: block;
+            border: 1px ridge red;
+            padding: 0px 0px 0px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>femboys</h1>
+    <h2>did you know that...</h2>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. <a id="parte" href="">Femboys são</a> eos neque magni numquam delectus sint ullam qui blanditiis fugiat dolorum illum quia corporis, aperiam <span>tag inline virou block :p</span> provident error ratione dolores quos nesciunt.</p>
+
+    <p><a href="./groupingtags.html">trabaino com grouping tags [semânticas!]</a></p>
+</body>
+</html>

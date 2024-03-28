@@ -1,0 +1,272 @@
+@charset "UTF-8";
+@font-face {
+    font-family: idroid;
+    src: url(fonts/idroid.otf);
+}
+
+@font-face {
+    font-family: 'noto sans';
+    src: url(fonts/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'noto sans italic';
+    src: url(fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+:root { /* criação de variáveis! */
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA666;
+    --cor4: #1A5C37;
+    --cor5: #064d1e;
+
+    --font0: 'noto sans', Arial, Helvetica, sans-serif;
+    --font01: 'noto sans italic';
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-titulo: 'idroid', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--font0);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.externo::after {
+    content: "\1F517";
+}
+
+abbr {
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* CABEÇALHO */
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5) 80%);
+
+    padding-top: 40px;
+    padding-bottom: 10px;
+    
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.685);
+
+    text-align: center;
+    color: white;
+    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+#titulo-site {
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    font-size: 3em;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-bottom: 10px;
+}
+
+#subtitulo-site {
+    max-width: 600px;
+   
+    margin: auto; /*para centralizar. o text-align:center n funciona pois defini o tamanho da caixa*/
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-weight: 200;
+}
+
+nav {
+    background-color: var(--cor5);
+
+    margin-top: 40px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align: left;
+    text-shadow: none;
+}
+
+nav > a {
+    padding: 8px;
+    margin-right: 5px;
+
+    font-weight: normal;
+    color: white;
+}
+
+nav > a:hover {
+    text-decoration: none;
+
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 5px;
+
+    transition-duration: 0.5s; /* animação! */
+}
+/* FIM CABEÇALHO */
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    background-color: white;
+
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.685);
+
+    margin: auto;
+
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+main h1 { /* "qualquer h1 que tiver dentro do main", independente de outras tags */
+    color: var(--cor4);
+    font-family: var(--font-titulo);
+
+    font-weight: normal;
+    font-size: 1.8em;
+}
+    
+main h2 {
+    color: var(--cor4);
+    font-family: var(--font-titulo);
+
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 0.3em;
+
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 2em;
+
+    margin: 0.9em 0em;
+}
+
+main strong {
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+main a {
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
+main img {
+    width: 75%;
+    
+    margin: auto;
+    display: block; /*imagens por padrão não são um bloco, por isso a configuração de margem não funciona sem esse valor*/
+}
+
+main img.imagens-pq {
+    max-width: 300px;
+}
+
+.video {
+    background-color: var(--cor4);
+
+    position: relative;
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 60.2%;
+}
+
+
+div.video > iframe {
+    position: absolute;
+    
+    top: 5%;
+    left: 5%;
+    /* para ajustar a centralização (borda) */
+
+    width: 90%;
+    height: 90%
+}
+/* FIM CONTEÚDO PRINCIPAL */
+
+/* CONTEÚDO EXTRA */
+aside {
+    background-color: var(--cor1);
+    
+    padding: 20px;
+    border-radius: 10px;
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    border-radius: 10px 10px 0px 0px;
+
+    margin: -20px -20px 0px -20px;
+    padding: 6px;
+
+    color: white;
+    font-weight: 700;
+}
+
+aside > ul {
+    list-style-type: '\2714\0020\0020'; /* códigos unicode -> sinal de certo + dois espaços */
+    columns: 2;
+    list-style-position: inside; /* definir a posição dos marcadores */
+}
+
+aside a {
+    background-color: transparent;
+}
+/* FIM CONTEÚDO EXTRA */
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    background-color: var(--cor5);
+    margin-top: 30px;
+    padding: 5px;
+
+    color: white;
+    font-weight: 200;
+    font-family: 'noto sans italic';
+}
+
+footer > p {
+    font-size: 0.87em;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: 350;
+}

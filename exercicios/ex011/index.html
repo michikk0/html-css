@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+        font-family: Calibri;
+        }
+    </style>
+</head>
+<body>
+    <h1>uau, uma imagem dinâmica</h1>
+    <p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/michikun-P.jpg" type="image/jpg">
+        <source media="(max-width: 1000px)" srcset="imagens/michikun-M.jpg" type="image/jpg">
+        <img src="imagens/michikun-G.jpg" alt="michi-kun surpreso">
+    </picture>
+    <br>
+    (mude a resolução do navegador)</p>
+
+    <!--max-widht = tamanho máximo (do dispositivo) / type = media type-->
+    <!-- na base do <picture> tem q ter o <img src>, e acima a outras -->
+
+    <p><em>midnight trivia miracle quiz - shoji meguro</em> <br>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="media/06. Midnight Trivia Miracle Quiz.flac" type="audio/flac">
+    </audio>
+    </p> 
+   
+    <!--controls = player-->
+    <!--o <audio> já vem com o parâmetro "source" embutido, mas para áudio é importante ter vários tipos para garantir a compatibilidade em qualquer navegador. e a ordem importa! (melhor colocar o mp3 primeiro)-->
+    
+    <p>
+    <video preload="metadata" width="300" poster="imagens/michikun-P.jpg" controls loop>
+        <source src="media/rude babagee.mp4" type="video/mp4">
+    </video>
+    </p>
+
+    <!--poster = espécie de thumbnail-->
+    <!--aqui é a mesma coisa do <audio>, é bom colocar vários tipos para garantir a compatibilidade-->
+
+    <p>
+        <iframe width="300" height="300" src="https://www.youtube.com/embed/udyxxKEs2ts?si=RXEgfwtvnvugJhF9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+    <!--isso é uma incorporação do youtube... usando isso eu não consumiria banda do meu servidor-->
+</body>
+</html>

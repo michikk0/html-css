@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatações</title>
+    <style>
+        body {
+            font-family: Calibri;
+            font-size: larger;
+            font-weight: 100;
+        }
+        mark {
+            background-color: aqua;
+        }
+    </style>
+    <!--mudei o <mark> de toda a página. aliás: mark = seletor / bg-color = parâmetro / aqua = valor -->
+</head>
+<body>
+    <!-- semântica > forma -->
+
+    <h1>básico do básico</h1>
+    <p>não sei, <address>uau</address></p>
+
+    <p><mark>eu marco,</mark> sabia?</p>
+    <!--mark da cor aqua graças ao seletor do css-->
+
+    <p>quando o dinger se refere ao pers, eu preciso colocar uma ênfase. afinal, estamos falando <em>dele</em>.</p> 
+    <!--em = empashis. bem mais semântico que um simples i-->
+
+    <p><strong>EI, SEU BUNDA MOLE</strong></p>
+    <p>o que levas nesse <em>caixão?</em></p>
+    <!--strong = bem mais semântico que b-->
+
+    <p>teste</p>
+    <!--CTRL+SHIFT+P → atalho para executar uma ação. dá pra refazer as ações muito rapidamente. e colocar todo uma linha de texto dentro de uma tag-->
+
+    <h1>outras formatações</h1>
+    <h2>hora de assinar o contrato</h2>
+    <p><small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam maxime magnam, voluptate dignissimos id sapiente nisi, natus, adipisci modi velit nobis porro in illo? Ab totam cum similique ea tempora?</small></p>
+
+    <h2>mas...</h2>
+    <p>acho que isso é <ins>importante</ins>, mas <del>isso aqui não</del></p>
+    <!--ins = inserido > u / del = deletado-->
+
+    <h2>sobre os múltiplos de bits</h2>
+    <p>como os bits são compostos por dígitos <ins>bi</ins>nários, os múltiplos deles tem que ser de 2. por isso, ao invés des mil bits para formar um kilobit, são precidos na verdade 1028; pois 2<sup>10</sup> = 1028</p>
+    <!--sup = superior, SOBREscrito-->
+
+    <h2>pra que serve texto subscrito??</h2>
+    <p>não, sei, só sei que a fórmula da água tem um: H<sub>2</sub>O <br>
+    aliás, o subscrito usa a tag <em><strong>"&lt;sub&gt;"</strong></em> ¬w¬ <br> 
+    <img src="michikun_smug.png - Atalho.lnk" alt="michi-kun smug"> <small>&larr;(exemplo de <em>"sub"</em>)</small>
+    <!--sub = SUBscrito-->
+
+    <h1>citação</h1>
+    <h2>uma vez...</h2>
+    <p><blockquote cite="https://www.youtu.be/B1rm-ddtvPY">
+        ...eu nunca passei mal tomando leite. <br>
+        2021 eu toma leite de manhã, gelado; leite no almoço, temperatura ambiente... 
+    </blockquote></p>
+    <!--esse parâmetro cite (dentro da tag), serve só pro mecanismo de busca entender da onde veio essa quote-->
+
+    <h1>siglas são demais!</h1>
+    <p>eu sei algumas: <br>
+        <pre>
+    <abbr title="HyperText Markup Language">HTML</abbr>
+    <abbr title="Cascading Style Sheets">CSS</abbr>
+    <abbr title="HiperText Transfer Protocol">HTTP</abbr>
+    <abbr title="Internet Protocol">IP</abbr>
+    <abbr title="World Wide Web">WWW</abbr>
+    <abbr title="Thank You">TY</abbr>
+        </pre>
+        <!-- <pre> considera uma pré-formatação-->
+    </p>
+    <p>eu fiz uma lista bem rudimentar aq dentro do docmumento... mal eu sabia que a próxima aula era sobre listas :VVVV <br>
+    <img src="michikun_bonk.png - Atalho.lnk" alt="bonk no michi-kun!">   
+    </p>
+    <h1><bdo dir="rtl">foda-se</bdo></h1>
+    <!--bdo = bi-directional override-->
+</body>
+</html>

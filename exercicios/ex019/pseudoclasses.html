@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasses</title>
+    <style>
+        .perturbado:hover {
+            color: red;
+        }
+
+        .escondido {
+            display: none;
+        }
+
+        .perturbado:hover > .escondido {
+            display:block
+        }
+        /* '>' indica a children do elemento -> "dentro do .perturbado está o .escondido".*/
+    
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="perturbado">
+        <h1>pf não me toque!</h1>
+    </div> 
+    <p>(passe o mouse em cima)</p>
+    <div class="perturbado">
+        <h1>teste</h1>
+        <p class="escondido">olá... -w-</p>
+    </div>
+    <!--uma div serve pra agrupar tags-->
+
+    <p><a href="pseudoclasses.html">testes com links</a></p>
+</body>
+</html>

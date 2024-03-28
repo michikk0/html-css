@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ids</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #principal {
+            font-style: italic
+        }
+
+        h1#principal {
+            text-align: center;
+        }
+        /*tanto faz colocar ou não a tag*/
+
+        .confuso {
+            font-style: italic;
+        }
+
+        .titulo {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal">correr e pegar</h1> 
+    <!--a regra da W3C é q n se pd usar a msm id em mais de um elemento dentro de um HTML. é individual. então n posso usar '#principal' em mais nenhum canto-->
+    <p>temos que pegaaaaaaa</p>
+
+    <h2 class="confuso titulo">huh?</h2>
+    <!--dá pra colocar mais de um class-->
+    <p>Lorem ipsum, <span class=confuso>dolor sit amet consectetur</span> adipisicing elit. Vero perspiciatis quaerat quas commodi voluptatibus quos totam error atque! Vero nihil quae autem, omnis numquam aperiam corporis ipsam consectetur earum porro.</p>
+    <!-- <span> = só pra inserir o id/class-->
+
+</body>
+</html>
