@@ -8,12 +8,18 @@
         body {
             height: 100vh;
 
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: repeat-y;
-            
+            background-attachment: fixed;*/
+
+            background: black url(imagens/wallpaper002.jpg) center center repeat-y fixed;
+            /* shorthand -> color || image || position || repeat || attachment */
+
             background-size: cover;
+            
+
         }
 
         main {
@@ -36,11 +42,17 @@
             color: black;
             font-weight: bold;
         }
+
+        em {
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
     <main>
         <h1>...a imagem se repete</h1>
+        <em><p>(a menos que eu mude o vínculo)</p></em>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quas velit at, repellendus distinctio eveniet quia quis enim obcaecati provident aut eum nulla dolorem? Facere necessitatibus dolorum unde temporibus omnis.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus ullam rem non excepturi voluptates id veritatis quos tempore eum, aspernatur nisi unde quia amet labore, earum accusamus exercitationem. Qui, unde.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio dicta labore? Dolores assumenda vel illum, expedita iure deleniti enim rem corrupti tempora iusto, qui ipsa repudiandae obcaecati odit alias.</p>

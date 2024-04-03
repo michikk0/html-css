@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centrlização vertical</title>
+    <style>
+        body {
+            background: rgb(134, 215, 247);
+        }
+
+        #container {
+            position: relative; /*por padrão os container já são relativos*/
+            transform: translate(0%, 30%); 
+
+            /* 
+            transform -> movimentar o conteúdo
+            1º valor = +direita/-esquerda
+            2º valor = +baixo/-cima
+            */
+
+            height: 500px;
+            padding: 10px;
+            background: purple url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #conteúdo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            height: 210px;
+            width: 360px;
+            background: yellow url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteúdo">
+
+        </article>
+    </section>
+</body>
+</html>
