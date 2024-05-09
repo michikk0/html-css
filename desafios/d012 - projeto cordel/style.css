@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Passion One';
+    src: url(fontes/PassionOne-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url(fontes/WorkSans-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Glegoo';
+    src: url(fontes/Glegoo-Regular.ttf) format('truetype');
+}
+
+:root {
+    --titulo: 'Passion One';
+    --body: 'Work Sans';
+    --cordel: 'Glegoo';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: var(--body);
+    font-weight: 350;
+}
+
+a {
+    font-family: var(--body);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+header h1 {
+    font-family: var(--titulo);
+    font-size: 10vw;
+}
+
+header p {
+    font-size: 3vw;
+}
+
+header a {
+    color: white;
+}
+
+main {
+    padding: 30px;
+}
+
+main p {
+    margin: 30px 0px;
+
+    font-family: var(--cordel);
+    font-size: 3.5vw;
+    font-style: italic;
+    line-height: 2.5em;
+}
+
+section.img {
+    margin: 90px -30px;
+    padding: 30px;
+    box-shadow: inset black 0 0 20px 0px
+}
+
+section.img p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.450);
+    width: fit-content;
+    padding: 5px;
+}
+
+section.img#n1 {
+    background: black url(imagens/background001.jpg) center right no-repeat fixed;
+    background-size: cover;
+}
+
+section.img#n2 {
+    background: black url(imagens/background002.jpg) center left no-repeat fixed;
+    background-size: cover;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    line-height: 1.5em;
+
+    background-color: black;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+}
