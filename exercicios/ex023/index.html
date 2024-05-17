@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela básica</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table {
+            width: 350px;
+            height: 200px;
+            border-collapse: collapse; /*tirar espaçamento entre as bordas*/
+            
+            font-size: 1.1em;
+        }
+
+        tr {
+            font-weight: bold;
+
+            text-align: center;
+            vertical-align: top;
+        }
+
+        tr.alt {
+            background-color: lightgray;
+            font-weight: normal;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td.numero { /*por padrão, *no EXCEL*, números se alinham à direita*/
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>taBELINHA :3</h1>
+
+    <table>
+        <tr> <!--"table row" (linha)-->
+            <td>A1</td> <!--"table data" (dado)-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+            <!--as tag de fechamento </tr> e </td> não são obrigatórias-->
+
+        <tr class="alt">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr>
+            <td>A3</td>
+            <td class="numero">300</td>
+           <td>C3</td>
+        </tr>
+
+        <tr class="alt">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
