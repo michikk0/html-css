@@ -17,6 +17,11 @@
             font-size: 1.1em;
         }
 
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
         tr {
             font-weight: bold;
 
@@ -24,7 +29,7 @@
             vertical-align: top;
         }
 
-        tr.alt {
+        tr:nth-child(even) { /*-> espeficiar os elementos baseado em suas posições | even = par. também pode ser 2n = 2x1, 2x2...*/
             background-color: lightgray;
             font-weight: normal;
         }
@@ -37,12 +42,18 @@
         td.numero { /*por padrão, *no EXCEL*, números se alinham à direita*/
             text-align: right;
         }
+
+        a > p {
+            color: black;
+            font-style: italic;
+
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
-    <h1>taBELINHA :3</h1>
-
     <table>
+        <caption>taBELINHA :3</caption>
         <tr> <!--"table row" (linha)-->
             <td>A1</td> <!--"table data" (dado)-->
             <td>B1</td>
@@ -50,7 +61,7 @@
         </tr>
             <!--as tag de fechamento </tr> e </td> não são obrigatórias-->
 
-        <tr class="alt">
+        <tr>
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
@@ -62,11 +73,13 @@
            <td>C3</td>
         </tr>
 
-        <tr class="alt">
+        <tr>
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
         </tr>
     </table>
+
+    <a href="tabelas-avancadas.html" rel="next"><p>&rarr; tabela maior com tags avançadas...</p></a>
 </body>
 </html>
