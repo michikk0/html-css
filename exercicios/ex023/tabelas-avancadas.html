@@ -19,6 +19,7 @@
         table {
             width: 450px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -31,8 +32,17 @@
         thead, tfoot {
             background-color: rgb(65, 65, 65);
             color: white;
+
+            position: sticky;
+            top: -1px;
         }
 
+        thead > tr > th {
+            
+            background-color: rgb(65, 65, 65);
+        }
+
+        /*EFEITO ZEBRADO*/
         tbody > tr:nth-child(even) { /*-> espeficiar os elementos baseado em suas posições | even = par. também pode ser 2n = 2x1, 2x2...*/
             background-color: lightgrey;
         }
@@ -210,6 +220,6 @@
         </tfoot>
     </table>
 
-    <a href="index.html" rel="prev"><p>&larr; voltar para a tabela anterior...</p></a>
+    <a href="index.html" rel="prev"><p>&larr; voltar a tabela anterior...</p></a>
 </body>
 </html>
